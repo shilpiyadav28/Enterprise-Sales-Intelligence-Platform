@@ -287,7 +287,6 @@ Key visualizations include:
   
 * Regional sales distribution
 
-```
 
 ---
 
