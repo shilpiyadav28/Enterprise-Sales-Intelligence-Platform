@@ -96,7 +96,7 @@ Retail-Sales-Data-Warehouse
 │
 ├── README.md
 │
-├── data
+├── dataset
 │   ├── crm
 │   │   ├── cust_info.csv
 │   │   ├── prd_info.csv
@@ -107,25 +107,33 @@ Retail-Sales-Data-Warehouse
 │       ├── LOC_A101.csv
 │       └── PX_CAT_G1V2.csv
 │
-├── sql
-│   ├── bronze_layer
-│   │   ├── create_bronze_tables.sql
+├── scripts
+│   ├── bronze
+│   │   ├── ddl_for_bronze.sql
 │   │   └── load_bronze_data.sql
 │   │
-│   ├── silver_layer
-│   │   ├── create_silver_tables.sql
+│   ├── silver
+│   │   ├── init_database.sql
 │   │   └── clean_transform_data.sql
 │   │
-│   ├── gold_layer
-│   │   ├── create_fact_sales.sql
-│   │   ├── create_dim_customers.sql
-│   │   ├── create_dim_products.sql
-│   │   └── create_star_schema.sql
-│   │
-│   └── analytics
-│       ├── customer_analysis.sql
-│       ├── product_analysis.sql
-│       ├── sales_trend_analysis.sql
+│   ├── gold
+│   │   ├── ddl_for_golds.sql
+│   
+│ ── EDA
+│       ├── Analysis.sql
+│       ├── Magnitude_analysis.sql
+│       ├── Ranking_analysis.sql
+│
+│── Advanced Analysis
+│        ├──Change_over_Time_Analysis.sql
+│        ├──Cumulative_Analysis.sql
+│        ├──Data_Segmentation_Analysis.sql
+│        ├──Part-to-whole_Analysis.sql
+│        ├──Performance_Analysis.sql
+│
+│── Reports
+│         ├──
+│         ├──
 │
 ├── dashboards
 │   └── retail_sales_dashboard.pbix
